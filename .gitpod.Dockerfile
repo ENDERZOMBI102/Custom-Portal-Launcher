@@ -5,7 +5,7 @@ FROM gitpod/workspace-full-vnc
 USER gitpod
 
 RUN sudo apt-get -q update
-RUN sudo DEBIAN_FRONTEND=noninteractive apt-get install -q \
+RUN sudo DEBIAN_FRONTEND=noninteractive apt-get install -q -y \
     freeglut3-dev \
     python3.8-dev \
     libpython3.8-dev \
@@ -19,4 +19,4 @@ RUN sudo DEBIAN_FRONTEND=noninteractive apt-get install -q \
     libxtst-dev \
     libgtk2.0-dev \
     mingw-w64 \
-RUN sudo rm -rf /var/lib/apt/lists/*
+RUN sudo rm -f /var/lib/apt/lists/*
