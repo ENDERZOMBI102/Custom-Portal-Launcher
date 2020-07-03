@@ -18,4 +18,5 @@ RUN sudo apt-get -q update \
     libwebkit2gtk-4.0-dev \
     libxtst-dev \
     libgtk2.0-dev \
+    mingw-w64 \
     && sudo rm -rf /var/lib/apt/lists/*
