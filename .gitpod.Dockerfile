@@ -10,4 +10,4 @@ RUN sudo DEBIAN_FRONTEND=noninteractive apt-get install -q -y \
     python3.8-dev \
     libpython3.8-dev \
     mingw-w64
-RUN sudo rm -f /var/lib/apt/lists/*
+RUN sudo rm -f -r /var/lib/apt/lists/*
